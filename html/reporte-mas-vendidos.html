@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/reportes.css">
+
+
+    <title>Reporte más vendidos</title>
+</head>
+
+<body>
+    <header id="header-principal">
+        <section class="superior">
+
+
+            <nav class="paginas">
+                <a href="#">Restaurantes</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Soporte</a>
+            </nav>
+            <div class="botones">
+
+                <button id="button1">Inicio de sesión</button>
+                <button id="button2">Registro</button>
+            </div class="botones">
+    </header>
+
+    <h1>Reportes</h1>
+    <section id="duenno-reporte-general-entrada-datos">
+        <div id="tipo-de-relatorio" class="style-flex-row">
+            <a href="/html/reporte-general.html">
+                <h2 class="font-weight-500-border-regular">General</h2>
+            </a>
+            <a href="/html/reporte-ganancia.html">
+                <h2 class="font-weight-500-border-regular">Ganancia</h2>
+            </a>
+            <a href="/html/reporte-mas-vendidos.html">
+                <h2 class="font-weight-600-border-bold">Más vendidos</h2>
+            </a>
+        </div>
+
+
+        <div id="reporte-restaurante-y-fecha-form">
+            <form action="" class="style-flex-column">
+                <label for="duenno-lista-restaurantes">Seleccione el restaurante: </label>
+                <br />
+                <select name="duenno-lista-restaurantes" id="duenno-lista-restaurantes">
+                <option value="Restaurante-1">Restaurante 1</option>
+                <option value="Restaurante-2">Restaurante 2</option>
+                <option value="Restaurante-3">Restaurante 3</option>
+                </select>
+            </form>
+            <form action="" class="style-flex-column">
+                <label for="duenno-fecha-reporte-general">Seleccione la fecha</label>
+                <br />
+                <input type="date" name="duenno-fecha-reporte-general" id="duenno-fecha-reporte-general">
+            </form>
+            <form action="" class="style-flex-column" id="reporte-form-atajos">
+                <label>Atajos</label>
+                <span>
+                        <input type="radio" name="duenno-atajos-reporte-general" id="atajo-hoy">
+                        <label for="atajo-hoy">Hoy.</label>
+                    </span>
+                <span>
+                        <input type="radio" name="duenno-atajos-reporte-general" id="atajo-ayer">
+                        <label for="atajo-ayer">Ayer.</label>
+                    </span>
+                <span>
+                        <input type="radio" name="duenno-atajos-reporte-general" id="atajo-siete-dias">
+                        <label for="atajo-siete-dias">7 días.</label>
+                    </span>
+                <span>
+                        <input type="radio" name="duenno-atajos-reporte-general" id="atajo-treinta-dias">
+                        <label for="atajo-treinta-dias">30 días.</label>
+                    </span>
+            </form>
+            <button type="button" id="button-reporte-submit">Enviar</button>
+        </div>
+
+
+    </section>
+
+    <section id="reporte-general-tabla-de-datos">
+        <hr />
+        <table>
+            <tr>
+                <th>Posición</th>
+                <th>Plato</th>
+                <th>Cantidad</th>
+                <th>ID Plato</th>
+                <th>Fecha</th>
+
+            </tr>
+            <tr>
+                <td>#1</td>
+                <td>Plato</td>
+                <td>18</td>
+                <td>AB12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td>Plato</td>
+                <td>15</td>
+                <td>RT12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#3</td>
+                <td>Plato</td>
+                <td>12</td>
+                <td>GH12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#4</td>
+                <td>Plato</td>
+                <td>9</td>
+                <td>QW12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#5</td>
+                <td>Plato</td>
+                <td>6</td>
+                <td>KJ12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#6</td>
+                <td>Plato</td>
+                <td>5</td>
+                <td>MZ12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#7</td>
+                <td>Plato</td>
+                <td>4</td>
+                <td>GS12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#8</td>
+                <td>Plato</td>
+                <td>3</td>
+                <td>TH12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#9</td>
+                <td>Plato</td>
+                <td>2</td>
+                <td>PO12345</td>
+                <td>11/07/2021</td>
+            </tr>
+            <tr>
+                <td>#10</td>
+                <td>Plato</td>
+                <td>2</td>
+                <td>PC12345</td>
+                <td>11/07/2021</td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <section id="footer">
+            <div class="footer-area"></div>
+            <img class="foto2" img src="FoodCourt-logo.jpeg" alt="Food Court" width="500" height="333">
+            <p class="copyright"></p>
+            <div class="vertical-center"> </div>
+
+            <div class="footer-basic">
+                <footer>
+                    <div class="social"><a href="#"><i class="icon ion-social-instagram"><img class="instagram" img src="icon ion-social-instagram.png" alt="Instagram" width="100" height="100"></i></a><a href="#"><i class="icon ion-social-twiter"><img class="Twiter" img src="icon ion-social-twiter.png" alt="Twiter" width="100" height="100"></i></a>
+                        <a href="#"><i class="icon ion-social-tiktok"><img class="tiktok" img src="icon ion-social-tiktok.png" alt="Tiktok" width="100" height="100"></i></i></a>
+                        <a href="#"><i class="icon ion-social-facebook"><img class="facebook" img src="icon ion-social-facebook.png" alt="Facebook" width="100" height="100"></i></a>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a></li>
+                        <li class="list-inline-item"><a href="#">Restaurantes</a></li>
+                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                        <li class="list-inline-item"><a href="#">Soporte</a></li>
+                    </ul>
+                    <div class="footer-line">
+                        <div class="vertical-center"></div>
+                    </div>
+                    <p class="copyright">SoftMountain Technology © 2021</p>
+                </footer>
+                <script type="text/javascript" src="/js/main.js"></script>
+                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
