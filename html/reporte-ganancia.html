@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/reportes.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reportes.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
 
 
     <title>Reporte ganacia</title>
@@ -24,18 +25,19 @@
                 <button id="button1">Inicio de sesión</button>
                 <button id="button2">Registro</button>
             </div class="botones">
+        </section>
     </header>
 
     <h1>Reportes</h1>
     <section id="duenno-reporte-general-entrada-datos">
         <div id="tipo-de-relatorio" class="style-flex-row">
-            <a href="/html/reporte-general.html">
+            <a href="reporte-general.html">
                 <h2 class="font-weight-500-border-regular">General</h2>
             </a>
-            <a href="/html/reporte-ganancia.html">
+            <a href="reporte-ganancia.html">
                 <h2 class="font-weight-600-border-bold">Ganancia</h2>
             </a>
-            <a href="/html/reporte-mas-vendidos.html">
+            <a href="reporte-mas-vendidos.html">
                 <h2 class="font-weight-500-border-regular">Más vendidos</h2>
             </a>
         </div>
@@ -43,32 +45,24 @@
 
         <div id="reporte-restaurante-y-fecha-form">
             <form action="" class="style-flex-column">
-                <label for="duenno-lista-restaurantes">Seleccione el restaurante: </label>
+                <label for="duenno-lista-restaurantes"></label>
                 <br />
-                <select name="duenno-lista-restaurantes" id="duenno-lista-restaurantes">
+                <select name="duenno-lista-restaurantes-name" id="duenno-lista-restaurantes">
+                <option value="restaurantePlaceholder">Seleccione el restaurante:</option>
                 <option value="Restaurante-1">Restaurante 1</option>
                 <option value="Restaurante-2">Restaurante 2</option>
                 <option value="Restaurante-3">Restaurante 3</option>
                 </select>
             </form>
             <form action="" class="style-flex-column">
-                <label for="duenno-fecha-reporte-general">Seleccione la fecha</label>
+                <label for="duenno-fecha-reporte-general"></label>
                 <br />
-                <input type="date" name="duenno-fecha-reporte-general" id="duenno-fecha-reporte-general">
+                <input type="text" id="duenno-fecha-reporte-general" name="duenno-fecha-reporte-general" placeholder="Seleccione una fecha:" onfocus="(this.type='date')" onblur="(this.type='text')">
             </form>
-            <form action="" class="style-flex-column" id="reporte-form-atajos">
-                <label>Atajos</label>
-                <span>
-                        <input type="radio" name="duenno-atajos-reporte-general" id="atajo-hoy">
-                        <label for="atajo-hoy">Hoy.</label>
-                    </span>
-                <span>
-                        <input type="radio" name="duenno-atajos-reporte-general" id="atajo-ayer">
-                        <label for="atajo-ayer">Ayer.</label>
-                    </span>
-            </form>
-            <button type="button" id="button-reporte-submit">Enviar</button>
+            <button type="submit" id="button-reporte-submit">Enviar</button>
+
         </div>
+
 
 
     </section>
@@ -92,29 +86,30 @@
     <footer>
         <section id="footer">
             <div class="footer-area"></div>
-            <img class="foto2" img src="FoodCourt-logo.jpeg" alt="Food Court">
+            <img class="foto2" img src="../media/imagenes/FoodCourt-logo.jpeg" alt="Food Court" width="500" height="333">
             <p class="copyright"></p>
             <div class="vertical-center"> </div>
 
             <div class="footer-basic">
-                <footer>
-                    <div class="social"><a href="#"><i class="icon ion-social-instagram"><img class="instagram" img src="icon ion-social-instagram.png" alt="Instagram" width="100" height="100"></i></a><a href="#"><i class="icon ion-social-twiter"><img class="Twiter" img src="icon ion-social-twiter.png" alt="Twiter" width="100" height="100"></i></a>
-                        <a href="#"><i class="icon ion-social-tiktok"><img class="tiktok" img src="icon ion-social-tiktok.png" alt="Tiktok" width="100" height="100"></i></i></a>
-                        <a href="#"><i class="icon ion-social-facebook"><img class="facebook" img src="icon ion-social-facebook.png" alt="Facebook" width="100" height="100"></i></a>
-                    </div>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="#">Home</a></li>
-                        <li class="list-inline-item"><a href="#">Restaurantes</a></li>
-                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
-                        <li class="list-inline-item"><a href="#">Soporte</a></li>
-                    </ul>
-                    <div class="footer-line">
-                        <div class="vertical-center"></div>
-                    </div>
-                    <p class="copyright">SoftMountain Technology © 2021</p>
-                </footer>
-                <script type="text/javascript" src="/js/main.js"></script>
-                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <div class="social">
+                    <a href="#"><i class="icon ion-social-instagram"><img class="instagram" img src="../media/imagenes/icon ion-social-instagram.png" alt="Instagram" width="100" height="100"></i></a>
+                    <a href="#"><i class="icon ion-social-twiter"><img class="Twiter" img src="../media/imagenes/icon ion-social-twiter.png" alt="Twiter" width="100" height="100"></i></a>
+                    <a href="#"><i class="icon ion-social-tiktok"><img class="tiktok" img src="../media/imagenes/icon ion-social-tiktok.png" alt="Tiktok" width="100" height="100"></i></a>
+                    <a href="#"><i class="icon ion-social-facebook"><img class="facebook" img src="../media/imagenes/icon ion-social-facebook.png" alt="Facebook" width="100" height="100"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Restaurantes</a></li>
+                    <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                    <li class="list-inline-item"><a href="#">Soporte</a></li>
+                </ul>
+                <div class="footer-line">
+                    <div class="vertical-center"></div>
+                </div>
+                <p class="copyright">SoftMountain Technology © 2021</p>
+    </footer>
+    <script type="text/javascript" src="/js/reportes.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

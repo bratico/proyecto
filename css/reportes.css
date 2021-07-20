@@ -103,8 +103,9 @@ div#tipo-de-relatorio h2:hover {
 }
 
 #button-reporte-submit {
+    margin: 40px 0 0 0;
     align-items: center;
-    justify-self: center;
+    justify-self: bottom;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
