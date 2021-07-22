@@ -1,0 +1,186 @@
+body {
+    width: 100%;
+}
+
+#banner-container {}
+
+#banner-restaurante {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    background-image: url(/media/imagenes/banner-pizza.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+#banner-restaurante span {
+    display: inline-block;
+    position: absolute;
+    line-height: 50px;
+    color: white;
+    text-shadow: 4px 2px #264653, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    stroke: black;
+}
+
+#banner-restaurante span:nth-of-type(1) {
+    top: 55%;
+    left: 3%;
+    position: relative;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+#banner-restaurante span:nth-of-type(2) {
+    top: 55%;
+    left: 3%;
+    position: relative;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+#menu-nav-restaurante {
+    width: 100%;
+}
+
+#menu-horarios-top-nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 50px;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    margin: 30px 150px 0 95px;
+}
+
+#menu-horarios-top-nav a {
+    padding: 0 30px 0 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu-horarios-top-nav a:last-child {
+    border-left: 1px solid black;
+}
+
+#categorias-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    margin: 30px 0 100px 0;
+}
+
+#categorias-menu a {
+    padding: 0 30px 0 30px;
+    text-decoration: none;
+    color: black;
+    border-top: 2px solid black;
+    border-right: 1px solid black;
+    flex: 1;
+}
+
+#categorias-menu a:last-child {
+    border-right: none;
+}
+
+#cards-container {
+    background-color: black;
+}
+
+.cards-platillos-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 6em;
+}
+
+.card-platillo {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    box-shadow: 12px 12px 2px 1px #F4D35E;
+}
+
+.card-platillo-descripccion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 200px;
+    border-right: 1px solid black;
+    padding: 25px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.card-platillo-img-div {
+    width: 50%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-platillo-img {
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+    background-image: url('/media/imagenes/pizza-arugula.jpeg');
+    position: absolute;
+    background-repeat: space;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+}
+
+.cards-container {
+    margin: 50px 150px 50px 150px;
+}
+
+.card-platillo-nombre {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+}
+
+.card-platillo-descripcion {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+}
+
+.card-platillo-precio {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+}
