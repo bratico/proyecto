@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css\registro_encargado-de-restaurante.css">
+
+</head>
+
+<body>
+
+    <header id="header-principal">
+        <section class="superior">
+            <nav class="paginas">
+                <a href="#">Restaurantes</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Soporte</a>
+            </nav>
+            <div class="botones">
+                <button id="button1">Inicio de sesión</button>
+                <button id="button2">Registro</button>
+            </div class="botones">
+    </header>
+    <main>
+        <section id="banner_inicio">
+            <h1>Registro de Encargado de Restaurante</h1>
+            <p>Ingresa la información del encargado de restaurante.</p>
+            <div class="container">
+                <div class="text">Información del Usuario</div>
+                <div class="user-box">
+                    <form>
+                        <label for="txt-nombre"></label>
+                        <input type="text" id="txt-nombre" required="" placeholder="Nombre">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <label for="txt-apellido"></label>
+                        <input type="text" id="txt-apellido" required="" placeholder="Apellido">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <label for="fecha-nacimiento"></label>
+                        <input type="text" id="datepicker" placeholder="Fecha de nacimiento" onfocus="(this.type='date')" />
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <label for="">Tipo de identificación</label>
+                        <select id="ids" required>
+  <option value="txt-nacional">Personal Física Nacional</option>
+  <option value="txt-residente">Personal Física Nacional</option>
+  <option value="txt-jurídica">Personal Jurídica</option>
+</select> </form>
+                </div>
+                <div>
+                    <form>
+                        <input type="text" id="txt-id" required="" placeholder="Número de identificación">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <label for="provincia" required>Provincia de Residencia</label>
+                        <select id="provincia">                          
+
+  <option value="txt-san-jose">San José</option>
+  <option value="txt-heredia">Heredia</option>
+  <option value="txt-cartago">Cartago</option>
+  <option value="txt-guanacaste">Guanacaste</option>
+  <option value="txt-puntarenas">Puntarenas</option>
+<option value="txt-limon">Limón</option>
+</select></form>
+                </div>
+            </div>
+            <div class="container2">
+                <form>
+                    <label for="txt-contrasenna">Información de Seguridad</label>
+                    <input type="password" id="txt-contrasenna" required placeholder="Contraseña">
+                </form>
+                <div class="boton-registro">
+                    <button type="submit" id="btn-registro">Registro</button></div>
+            </div>
+            <h4>Su solicitud será revisada por nuestro equipo administrativo, en los próximos 3 días<br> se le estará comunicando por correo electrónico, la aprobación o rechazo de su solicitud.</h4>
+    </main>
+    <footer>
+        <section id="footer">
+            <div class="footer-area"></div>
+            <img class="foto2" img src="FoodCourt-logo.jpeg" alt="Food Court" width="500" height="333">
+            <p class="copyright"></p>
+            <div class="footer-basic">
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"><img class="instagram" img src="icon ion-social-instagram.png" alt="Instagram" width="100" height="100"></i></a><a href="#"><i class="icon ion-social-twiter"><img class="Twiter" img src="icon ion-social-twiter.png" alt="Twiter" width="100" height="100"></i></a>
+                    <a href="#"><i class="icon ion-social-tiktok"><img class="tiktok" img src="icon ion-social-tiktok.png" alt="Tiktok" width="100" height="100"></i></i></a>
+                    <a href="#"><i class="icon ion-social-facebook"><img class="facebook" img src="icon ion-social-facebook.png" alt="Facebook" width="100" height="100"></i></a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Restaurantes</a></li>
+                    <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                    <li class="list-inline-item"><a href="#">Soporte</a></li>
+                </ul>
+                <div class="footer-line">
+                    <div class="vertical-center"></div>
+                </div>
+                <p class="copyright">SoftMountain Technology © 2021</p>
+            </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>"
+    <script src="js\registro_encargado-de-restaurante.js" type="text/javascript"></script>
+</body>
+
+</html>

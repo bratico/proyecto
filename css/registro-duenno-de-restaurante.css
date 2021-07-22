@@ -1,0 +1,539 @@
+.error-box {
+    border: 3px solid #eb4d4b;
+}
+
+html {
+    font-family: DM Sans;
+}
+
+
+/* .swal2-styled.swal2-confirm {
+    background: green;
+} */
+
+body {
+    font-family: DM Sans;
+    font-size: 100%;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#header-principal .superior {
+    background-color: #ffffff;
+    display: flex;
+    height: 84px;
+    justify-content: space-between;
+    top: 10px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#header-principal .superior nav a {
+    float: inline-start;
+    display: inline;
+    margin-right: 40px;
+    color: #2a9d8f;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+#header-principal .superior nav a:hover {
+    text-decoration: underline;
+}
+
+#header-principal .superior .botones {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    float: inline-end;
+    position: right;
+}
+
+#header-principal .superior .botones #button2 {
+    justify-content: flex-end;
+    width: 150px;
+    height: 40px;
+    left: 1470px;
+    right: 25 px;
+    margin-right: 15px;
+    font-family: DM Sans;
+    /* Rectangle 2 */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: DM Sans;
+    font-size: 16px;
+    color: #FFFFFF;
+    /* Actionable Item */
+    background: #264653;
+    border-radius: 6px;
+}
+
+#header-principal .superior .botones #button1 {
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    width: 150px;
+    height: 40px;
+    left: 1308px;
+    top: 25px;
+    background: #FFFFFF;
+    /* Actionable Item */
+    border: 1px solid #2A9D8F;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    font-family: DM Sans;
+    font-size: 16px;
+    color: #2A9D8F;
+}
+
+#header-principal .superior #button1:hover {
+    background: #E9ebee;
+}
+
+#banner_inicio h1 {
+    align-content: center;
+    top: 150 px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #2A9D8F;
+}
+
+#banner_inicio p {
+    /* Body P Large */
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 50px;
+    /* or 139% */
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+h4 {
+    /* Body P Large */
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 150px;
+    font-size: 20px;
+    line-height: 50px;
+    /* or 139% */
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.container {
+    /* Rectangle */
+    text-align: center;
+    margin-left: 650px;
+    margin-bottom: 5px;
+    width: 400px;
+    height: 1200px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    top: 360px;
+    background: #FFFFFF;
+    border: 0px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio h2 {
+    text-align: center;
+    align-content: center;
+    /* Body P Large */
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 50px;
+    /* or 139% */
+    letter-spacing: -0.015em;
+    color: #130c0c;
+}
+
+#banner_inicio h3 {
+    text-align: center;
+    align-content: center;
+    /* Body P Large */
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 50px;
+    /* or 139% */
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+#banner_inicio #txt-contrasenna {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-nombre {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-datepicker {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-apellido {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-correo {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #ids {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-id {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #provincia {
+    width: 260px;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #ids #txt-nacional {
+    font-size: 20px;
+    line-height: 72px;
+    font-family: Roboto;
+}
+
+#banner_inicio #txt-id {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#datepicker {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-nombre-comercial-restaurante {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #txt-nombre-comun-restaurante {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#banner_inicio #cedula-juridica {
+    width: 260px;
+    align-content: center;
+    padding-left: 5px;
+    height: 40px;
+    top: 563px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#btn-registro {
+    width: 260px;
+    margin-top: 10px;
+    height: 40px;
+    align-self: center;
+    /* Rectangle 2 */
+    font-family: DM Sans;
+    font-size: 16px;
+    color: #FFFFFF;
+    /* Actionable Item */
+    background: #2A9D8F;
+    border-radius: 6px;
+}
+
+#btn-registro:hover {
+    background: #264653;
+}
+
+.container .text {
+    padding: 3px 3px 3px 3px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+form #txt-nombre {
+    margin: 15px 0;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 40px;
+}
+
+form #txt-apellido {
+    padding-left: 5px;
+    margin: 15px 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #4b4c4d;
+    margin-top: 750px;
+}
+
+.footer-area {
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+#footer .ul {
+    display: flex;
+    top: 1900px;
+    text-align: center;
+    align-self: Center;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+#footer ul a {
+    left: 165px;
+    top: 1600px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 0 10px;
+    list-style: none;
+    text-align: center;
+    left: 165px;
+    align-items: flex-start;
+    font-family: DM Sans;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    display: flex;
+}
+
+#footer ul a:hover {
+    opacity: 0.5;
+}
+
+#footer .footer-line {
+    /* Rectangle */
+    position: absolute;
+    align-self: center;
+    width: 1520px;
+    height: 1px;
+    left: 165px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #ffffff;
+    color: #4b4c4d;
+}
+
+.footer-basic ul {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    top: 1500px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity: 0.5;
+}
+
+.footer-basic .social {
+    align-self: center;
+    align-content: center;
+    margin-bottom: 10;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+}
+
+.foto2 {
+    align-self: center;
+    margin-top: 100px;
+    padding: 10px;
+    margin-left: 780px;
+    width: 230px;
+    height: 95px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+.footer-basic .copyright {
+    align-self: center;
+    margin-top: 40px;
+    align-content: center;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 0;
+    font-family: DM Sans;
+}

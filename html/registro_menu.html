@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css\registro_menu.css">
+
+</head>
+
+<body>
+    <header id="header-principal">
+        <section class="superior">
+            <nav class="paginas">
+                <a href="#">Restaurantes</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Soporte</a>
+            </nav>
+            <div class="botones">
+                <button id="button1">Usuario</button>
+                <button id="button2">Cerrar sesión</button>
+            </div class="botones">
+
+    </header>
+
+    <main>
+        <div class="column">
+            <div class="card">
+                <section id="banner_inicio">
+                    <h1>Registro de Menú</h1>
+                    <p>Ingresa la información de los menús de tu restaurante.</p>
+                </section>
+                <div id="banner_inicio-container">
+                    <section class="menu-menus">
+                        <a href="#">Menú 1 </a>
+                        <div class="menu-line">
+                    </section>
+                    <div class="vertical-center"></div>
+                    <div class="column">
+                        <div class="card">
+                            <h2>Información básica del Menú</h2>
+                            <h4>Información general</h4>
+                            <div>
+                                <div class="user-box">
+                                    <div>
+                                        <form>
+                                            <label for="txt-nombre-menu"></label>
+                                            <input type="text" id="txt-nombre-menu" required="" placeholder="Nombre del menú">
+                                        </form>
+                                    </div>
+                                    <label for="txt-descripcion-menu"></label>
+                                    <form>
+                                        <input type="text" id="txt-descripcion-menu" required="" placeholder="Descripción corta del menú">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h2>Contenidos del menú</h2>
+                            <div id="menus-platillo"></div>
+                            <div class="user-box">
+                                <h4>Platillos del menú</h4>
+                                <form method="get" action>
+                                    <br/>
+                                    <h4>
+                                        <input name="cbiplatosfuertes" type="checkbox" />Plato 1
+                                        <br/>
+                                        <input name="cbiaperitivos" type="checkbox" />Plato 2
+                                        <br/>
+                                        <input name="cbicompartir" type="checkbox" />Plato 3
+                                        <br/>
+                                        <input name="cbiensaladas" type="checkbox" />Plato 4
+                                        <br/>
+                                        <input name="cbibebidas" type="checkbox" />Plato 5<br/>
+                                        <input name="cbipostres" type="checkbox" />Plato 6<br/>
+                                        <input name="cbiplatosfuertes" type="checkbox" />Plato 7
+                                        <br/>
+                                        <input name="cbiaperitivos" type="checkbox" />Plato8
+                                        <br/>
+                                        <input name="cbicompartir" type="checkbox" />Plato 9
+                                        <br/>
+                                        <input name="cbiensaladas" type="checkbox" />Plato 10
+                                        <br/>
+                                        <input name="cbibebidas" type="checkbox" />Plato 11<br/>
+                                        <input name="cbipostres" type="checkbox" />Plato 12<br/></h4>
+                                </form>
+                            </div>
+                            <form>
+                                <section class="agregar-platillo">
+                                    <a href="#">Agregar un platillo</a>
+                                </section>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <input type="submit" value="Registra el Menú" button id="btn-registro">
+                    </div>
+
+    </main>
+    <footer>
+        <section id="footer">
+            <div class="footer-area"></div>
+            <img class="foto2" img src="FoodCourt-logo.jpeg" alt="Food Court" width="500" height="333">
+            <p class="copyright"></p>
+            <div class="vertical-center"> </div>
+            <div class="footer-basic">
+                <footer>
+                    <div class="social"><a href="https://www.instagram.com/"><i class="icon ion-social-instagram"><img class="instagram" img src="icon ion-social-instagram.png" alt="Instagram" width="100" height="100"></i></a><a href="https://twitter.com/"><i class="icon ion-social-twiter"><img class="Twiter" img src="icon ion-social-twiter.png" alt="Twiter" width="100" height="100"></i></a>
+                        <a href="https://www.tiktok.com/"><i class="icon ion-social-tiktok"><img class="tiktok" img src="icon ion-social-tiktok.png" alt="Tiktok" width="100" height="100"></i></i></a>
+                        <a href="https://www.facebook.com/"><i class="icon ion-social-facebook"><img class="facebook" img src="icon ion-social-facebook.png" alt="Facebook" width="100" height="100"></i></a>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a></li>
+                        <li class="list-inline-item"><a href="#">Restaurantes</a></li>
+                        <li class="list-inline-item"><a href="#">Acerca de</a></li>
+                        <li class="list-inline-item"><a href="#">Soporte</a></li>
+                    </ul>
+                    <div class="footer-line">
+                        <div class="vertical-center"></div>
+                    </div>
+                    <p class="copyright">SoftMountain Technology © 2021</p>
+                </footer>
+
+            </div>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="js\registro_menu.js"></script>
+    </footer>
+
+</body>
+
+</html>
