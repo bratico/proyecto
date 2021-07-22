@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap');
 #header-principal .superior {
     background-color: #ffffff;
     display: flex;
@@ -66,15 +67,12 @@
 }
 
 .foto2 {
-    align-self: center;
-    margin-top: 100px;
-    padding: 10px;
-    margin-left: 805px;
+    padding: 200px 0 0 0;
     width: 230px;
     height: 95px;
-    align-self: center;
-    align-content: center;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .vertical-center {
@@ -115,15 +113,14 @@
 
 .footer-basic ul {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-around;
     padding: 0;
     list-style: none;
     text-align: center;
     font-size: 18px;
-    line-height: 1.6;
     margin-bottom: 0;
-    margin-left: 150px;
-    margin-top: 10px;
+    margin-left: auto;
+    margin-top: auto;
 }
 
 #footer ul a {
@@ -148,22 +145,21 @@
     padding: 0 10px;
 }
 
-#footer .footer-line {
-    position: absolute;
-    align-self: center;
-    width: 1520px;
+.footer-line {
+    width: 95%;
     height: 1px;
-    left: 165px;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(0, 0, 0, 0.5);
 }
 
-.footer-basic .copyright {
-    align-self: center;
-    margin-top: 40px;
-    align-content: center;
-    text-align: center;
+.copyright {
     font-size: 13px;
     color: #aaa;
-    margin-bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 30px 0 0 0;
     font-family: DM Sans;
 }

@@ -1,0 +1,205 @@
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap');
+        body {
+            width: 100%;
+        }
+        
+        h1 {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 72px;
+            padding: 0;
+            border: none;
+            margin: 30px 0 40px 100px;
+        }
+        
+        hr {
+            width: 100%;
+        }
+        
+        #listado-de-platos-a-pagar {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            /*PLACEHOLDER para remover BORDER
+    border: 1px solid black;*/
+            margin: 0;
+        }
+        
+        #container-lista {}
+        
+        .carrito-resumen-producto {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+        
+        .container-grid {
+            display: grid;
+            grid-template-columns: 150px 50px 50px 50px 50px 50px 50px 50px;
+            grid-template-rows: 50px 50px 50px;
+            column-gap: 15px;
+            row-gap: 0;
+            border-top: 1px solid #264653;
+            border-bottom: 1px solid #264653;
+            padding: 15px 0 15px 20px;
+        }
+        
+        .foto-platillo {
+            background-image: url(/media/imagenes/pizza-arugula.jpeg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            border-radius: 10%;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 10px gray;
+        }
+        
+        .nombre-platillo {
+            grid-column-start: 2;
+            grid-column-end: auto;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36.5657px;
+            line-height: 48px;
+        }
+        
+        .btn-bajar-cantidad-producto {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            width: 40px;
+            height: 40px;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 20px;
+            border-radius: 30%;
+            box-shadow: 4px 4px 10px darkgray;
+            background-color: white;
+            margin: auto;
+        }
+        
+        .btn-bajar-cantidad-producto:hover {
+            box-shadow: 5px 5px 20px gray;
+        }
+        
+        .btn-subir-cantidad-producto {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            width: 40px;
+            height: 40px;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 20px;
+            border-radius: 30%;
+            box-shadow: 4px 4px 10px darkgray;
+            background-color: white;
+            margin: auto;
+        }
+        
+        .btn-subir-cantidad-producto:hover {
+            box-shadow: 5px 5px 20px gray;
+        }
+        
+        .cantidad-actual-producto {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36.5657px;
+            line-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .precio-producto-total {
+            grid-column-start: 6;
+            grid-column-end: auto;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .borrar-producto {
+            grid-column-start: 8;
+            grid-column-end: 9;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .borrar-producto:hover {
+            grid-column-start: 8;
+            grid-column-end: 9;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #btn-pagar-cuenta {
+            width: 190px;
+            height: 91px;
+            background-color: #2a9d8f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            margin: auto;
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 41.7943px;
+            line-height: 63px;
+        }
+        
+        #container-button-pagar {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #container-button-pagar a {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            color: black;
+            display: block;
+            padding: 0;
+            margin: 30px 0 0 0;
+        }
