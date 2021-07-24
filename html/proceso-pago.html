@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/proceso-pago.css">
     <link rel="stylesheet" href="/css/header-footer.css">
-
+    <link rel="stylesheet" href="/css/proceso-pago.css">
 
     <title>Mi carrito</title>
 </head>
@@ -33,7 +32,7 @@
             <div class="carrito-resumen-producto">
                 <div class="container-grid">
                     <p class="foto-platillo"><img alt=""></p>
-                    <p class="nombre-platillo">Lorem</p>
+                    <p class="nombre-platillo">Pizza aceituna</p>
                     <button class="btn-bajar-cantidad-producto">-</button>
                     <p class="cantidad-actual-producto">1</p>
                     <button class="btn-subir-cantidad-producto">+</button>
@@ -44,13 +43,31 @@
         </div>
     </section>
     <br>
-    <section id="metodos-de-pago-usuario">
-
-    </section>
-    <br>
-    <section id="cuenta-usuario">
-
-    </section>
+    <div class="container-metodos-plus-cuenta">
+        <section id="metodos-de-pago-usuario">
+            <div id="container-metodos-pago">
+                <div id="card-metodos-de-pago">
+                    <i id="icon-tipo-tarjeta-carrito" class="flex-center-style"> <img src="/media/imagenes/icon-mastercard.png" /> </i>
+                    <i id="numero-display-tarjeta" class="flex-center-style">•••• 2134</i>
+                    <i id="tarjeta-esta-selecionado" class="flex-center-style">✔️ </i>
+                    <br>
+                    <i id="icon-tipo-efectivo-carrito" class="flex-center-style">&#128181;</i>
+                    <i id="nombre-efectivo" class="flex-center-style">Colones</i>
+                    <i id="efectivo-esta-seleccionado" class="flex-center-style">-</i>
+                    <i id="adicionar-metodo-pago" class="flex-center-style"> <a href="/html/editar-metodos-pago.html"> ⊕ Adicionar métodos de pago</a></i>
+                </div>
+            </div>
+        </section>
+        <section id="cuenta-usuario">
+            <div id="card-descripcion-pago">
+                <span>Subtotal:<i>3000</i></span>
+                <br>
+                <span>IVA:<i>390</i></span>
+                <br>
+                <span>Total:<i>3390</i></span>
+            </div>
+        </section>
+    </div>
     <div id="container-button-pagar">
         <button type="submit" id="btn-pagar-cuenta">Pagar</button>
         <br>

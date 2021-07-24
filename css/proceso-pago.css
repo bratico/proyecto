@@ -1,205 +1,329 @@
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap');
-        body {
-            width: 100%;
-        }
-        
-        h1 {
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 72px;
-            padding: 0;
-            border: none;
-            margin: 30px 0 40px 100px;
-        }
-        
-        hr {
-            width: 100%;
-        }
-        
-        #listado-de-platos-a-pagar {
-            width: 100%;
-            height: auto;
-            padding: 0;
-            /*PLACEHOLDER para remover BORDER
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap');
+.flex-center-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    padding: 0;
+    border: none;
+    margin: 30px 0 40px 100px;
+}
+
+hr {
+    width: 100%;
+}
+
+#listado-de-platos-a-pagar {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    /*PLACEHOLDER para remover BORDER
     border: 1px solid black;*/
-            margin: 0;
-        }
-        
-        #container-lista {}
-        
-        .carrito-resumen-producto {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0;
-        }
-        
-        .container-grid {
-            display: grid;
-            grid-template-columns: 150px 50px 50px 50px 50px 50px 50px 50px;
-            grid-template-rows: 50px 50px 50px;
-            column-gap: 15px;
-            row-gap: 0;
-            border-top: 1px solid #264653;
-            border-bottom: 1px solid #264653;
-            padding: 15px 0 15px 20px;
-        }
-        
-        .foto-platillo {
-            background-image: url(/media/imagenes/pizza-arugula.jpeg);
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 4;
-            border-radius: 10%;
-            box-sizing: border-box;
-            box-shadow: 4px 4px 10px gray;
-        }
-        
-        .nombre-platillo {
-            grid-column-start: 2;
-            grid-column-end: auto;
-            grid-row-start: 1;
-            grid-row-end: 2;
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36.5657px;
-            line-height: 48px;
-        }
-        
-        .btn-bajar-cantidad-producto {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            width: 40px;
-            height: 40px;
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 20px;
-            border-radius: 30%;
-            box-shadow: 4px 4px 10px darkgray;
-            background-color: white;
-            margin: auto;
-        }
-        
-        .btn-bajar-cantidad-producto:hover {
-            box-shadow: 5px 5px 20px gray;
-        }
-        
-        .btn-subir-cantidad-producto {
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            width: 40px;
-            height: 40px;
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 30px;
-            line-height: 20px;
-            border-radius: 30%;
-            box-shadow: 4px 4px 10px darkgray;
-            background-color: white;
-            margin: auto;
-        }
-        
-        .btn-subir-cantidad-producto:hover {
-            box-shadow: 5px 5px 20px gray;
-        }
-        
-        .cantidad-actual-producto {
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36.5657px;
-            line-height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .precio-producto-total {
-            grid-column-start: 6;
-            grid-column-end: auto;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 55px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .borrar-producto {
-            grid-column-start: 8;
-            grid-column-end: 9;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            font-size: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .borrar-producto:hover {
-            grid-column-start: 8;
-            grid-column-end: 9;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            font-size: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #btn-pagar-cuenta {
-            width: 190px;
-            height: 91px;
-            background-color: #2a9d8f;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            margin: auto;
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 41.7943px;
-            line-height: 63px;
-        }
-        
-        #container-button-pagar {
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #container-button-pagar a {
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 22px;
-            color: black;
-            display: block;
-            padding: 0;
-            margin: 30px 0 0 0;
-        }
+    margin: 0;
+}
+
+#container-lista {}
+
+.carrito-resumen-producto {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 150px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 15px;
+    row-gap: 0;
+    border-top: 1px solid #264653;
+    border-bottom: 1px solid #264653;
+    padding: 15px 0 15px 20px;
+}
+
+.foto-platillo {
+    background-image: url(/media/imagenes/pizza-arugula.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border-radius: 10%;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.nombre-platillo {
+    grid-column-start: 2;
+    grid-column-end: auto;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36.5657px;
+    line-height: 48px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.btn-bajar-cantidad-producto {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 40px;
+    height: 40px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 20px;
+    border-radius: 30%;
+    box-shadow: 4px 4px 10px darkgray;
+    background-color: white;
+    margin: auto;
+}
+
+.btn-bajar-cantidad-producto:hover {
+    box-shadow: 5px 5px 20px gray;
+}
+
+.btn-subir-cantidad-producto {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 40px;
+    height: 40px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 20px;
+    border-radius: 30%;
+    box-shadow: 4px 4px 10px darkgray;
+    background-color: white;
+    margin: auto;
+}
+
+.btn-subir-cantidad-producto:hover {
+    box-shadow: 5px 5px 20px gray;
+}
+
+.cantidad-actual-producto {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36.5657px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precio-producto-total {
+    grid-column-start: 6;
+    grid-column-end: auto;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.borrar-producto {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.borrar-producto:hover {
+    font-size: 36px;
+}
+
+.container-metodos-plus-cuenta {
+    width: 90%;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 15px 7em 15px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px;
+    column-gap: 45px;
+    row-gap: 0;
+}
+
+#btn-pagar-cuenta {
+    width: 190px;
+    height: 91px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin: auto;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 41.7943px;
+    line-height: 63px;
+}
+
+#btn-pagar-cuenta:hover {
+    box-shadow: 5px 5px 20px gray;
+}
+
+#container-button-pagar {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-button-pagar a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    display: block;
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+
+#card-metodos-de-pago {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 1.5em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 39px;
+}
+
+#cuenta-usuario {
+    box-shadow: 5px 5px 20px gray;
+    width: 80%;
+    height: 118%;
+    border: 1px solid black;
+    border-radius: 15% 5%;
+}
+
+#card-descripcion-pago {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1em 0 1em 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 39px;
+}
+
+#card-descripcion-pago span {
+    margin-left: 1.5em;
+    font-weight: 600;
+}
+
+#card-descripcion-pago span i {
+    position: absolute;
+    right: 1.5em;
+    font-weight: 400;
+}
+
+.icon-tipo-tarjeta-carrito {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#icon-tipo-efectivo-carrito {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 252%;
+}
+
+#numero-display-tarjeta {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#nombre-efectivo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#tarjeta-esta-selecionado {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#efectivo-esta-seleccionado {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#adicionar-metodo-pago {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    overflow: visible;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#adicionar-metodo-pago a {
+    text-decoration: none;
+    color: gray;
+}

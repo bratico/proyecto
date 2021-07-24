@@ -1,77 +1,79 @@
     .error {
-    border: 2px solid #eb4d4b;
-    font-family: roboto;
-}
-
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-#header-principal .superior {
-    background-color: #ffffff;
-    display: flex;
-    height: 84px;
-    justify-content: space-between;
-    top: 10px;
-    align-items: center;
-    margin-left: 50px;
-}
-
-#header-principal .superior nav a {
-    font-family: DM Sans;
-    float: inline-start;
-    display: inline;
-    margin-right: 40px;
-    color: #2a9d8f;
-    text-decoration: none;
-    padding-bottom: 5px;
-}
-
-#logo-restaurante {
-    margin: top 0;
-    padding: 5px;
-}
-
-#header-principal .superior nav a:hover {
-    text-decoration: underline;
-}
-
-#header-principal .superior .botones {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    float: inline-end;
-    position: right;
-}
-
-#banner_inicio-container #btn-registro-platillo:hover {
-    background: #264653;
-}
-
-#header-principal .superior .botones #button2 {
-    justify-content: flex-end;
-    width: 150px;
-    height: 40px;
-    left: 1470px;
-    right: 25 px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-right: 15px;
-    font-family: DM Sans;
-    /* Rectangle 2 */
-    font-family: DM Sans;
-    font-size: 16px;
-    color: #FFFFFF;
-    /* Actionable Item */
-    background: #2a9d8f;
-    border-radius: 6px;
-}
-
-#header-principal .superior #button2:hover {
-    background: #264653;
+        border: 2px solid #eb4d4b;
+        font-family: roboto;
+    }
+    
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    #header-principal .superior {
+        background-color: #ffffff;
+        display: flex;
+        height: 84px;
+        justify-content: space-between;
+        top: 10px;
+        align-items: center;
+        margin-left: 50px;
+    }
+    
+    #header-principal .superior nav a {
+        font-family: DM Sans;
+        float: inline-start;
+        display: inline;
+        margin-right: 40px;
+        color: #2a9d8f;
+        text-decoration: none;
+        padding-bottom: 5px;
+    }
+    
+    #logo-restaurante {
+        margin: top 0;
+        padding: 5px;
+    }
+    
+    #header-principal .superior nav a:hover {
+        text-decoration: underline;
+    }
+    
+    #header-principal .superior .botones {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        float: inline-end;
+        position: right;
+    }
+    
+    #banner_inicio-container #btn-registro-platillo:hover {
+        background: #264653;
+    }
+    
+    #header-principal .superior .botones #button2 {
+        justify-content: flex-end;
+        width: 150px;
+        height: 40px;
+        left: 1470px;
+        right: 25 px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        font-family: DM Sans;
+        /* Rectangle 2 */
+        font-family: DM Sans;
+        font-size: 16px;
+        color: #FFFFFF;
+        /* Actionable Item */
+        background: #2a9d8f;
+        border-radius: 6px;
+    }
+    
+    #header-principal .superior #button2:hover {
+        background: #264653;
+    }
+    
     #header-principal .superior .botones #button1 {
         justify-content: center;
         align-items: center;
@@ -92,9 +94,11 @@
         font-size: 16px;
         color: #2A9D8F;
     }
+    
     #columna2 #header-principal .superior #button1:hover {
         background: #E9ebee;
     }
+    
     #banner_inicio-container h1 {
         align-content: center;
         width: 1950px;
@@ -110,6 +114,7 @@
         letter-spacing: -0.015em;
         color: #2A9D8F;
     }
+    
     #banner_inicio h1 {
         width: 1920px;
         top: 150 px;
@@ -125,6 +130,7 @@
         letter-spacing: -0.015em;
         color: #2A9D8F;
     }
+    
     .foto1 {
         padding: 10px;
         margin: 10px;
@@ -132,6 +138,7 @@
         float: left;
         width: 250px;
     }
+    
     #banner_inicio p {
         width: 1920px;
         /* Body P Large */
@@ -146,6 +153,7 @@
         letter-spacing: -0.015em;
         color: #000000;
     }
+    
     #banner_inicio-container h4 {
         font-family: DM Sans;
         font-style: normal;
@@ -156,6 +164,7 @@
         letter-spacing: -0.015em;
         color: #000000;
     }
+    
     #banner_inicio-container #categorias-platillo {
         font-family: DM Sans;
         font-style: normal;
@@ -166,6 +175,7 @@
         color: #000000;
         margin-bottom: 5px;
     }
+    
     #banner_inicio-container {
         justify-content: center;
         align-items: center;
@@ -181,6 +191,7 @@
         background: #FFFFFF;
         border: 0px solid rgba(0, 0, 0, 0.5);
     }
+    
     #banner_medio-container {
         /* Rectangle */
         align-self: center;
@@ -195,6 +206,7 @@
         background: #FFFFFF;
         border: 0px solid rgba(0, 0, 0, 0.5);
     }
+    
     #banner_abajo-container {
         /* Rectangle */
         margin-left: 750px;
@@ -207,6 +219,7 @@
         background: #FFFFFF;
         border: 0px solid rgba(0, 0, 0, 0.5);
     }
+    
     #banner_inicio-container h2 {
         /* Body P Large */
         font-family: DM Sans;
@@ -218,6 +231,7 @@
         letter-spacing: -0.025em;
         color: #130c0c;
     }
+    
     #banner_medio-container h2 {
         /* Body P Large */
         font-family: DM Sans;
@@ -230,6 +244,7 @@
         letter-spacing: -0.025em;
         color: #130c0c;
     }
+    
     #banner_medio-container h4 {
         font-family: DM Sans;
         font-style: normal;
@@ -241,6 +256,7 @@
         letter-spacing: -0.015em;
         color: #000000;
     }
+    
     #banner_abajo-container h2 {
         /* Body P Large */
         font-family: DM Sans;
@@ -253,6 +269,7 @@
         letter-spacing: -0.025em;
         color: #130c0c;
     }
+    
     #banner_abajo-container h4 {
         font-family: DM Sans;
         align-content: center;
@@ -265,6 +282,7 @@
         letter-spacing: -0.015em;
         color: #000000;
     }
+    
     #banner_inicio-container h3 {
         /* Body P Large */
         font-family: DM Sans;
@@ -277,24 +295,29 @@
         letter-spacing: -0.015em;
         color: #000000;
     }
+    
     #banner_inicio-container.container3 #btn-registro:hover {
         background: #264653;
     }
+    
     .banner_inicio-container .text {
         padding: 3px 3px 3px 3px;
         padding-left: 5px;
         font-size: 25px;
     }
     /* Móviles en vertical */
+    
     @media (max-width: 480px) {
         #galeria {
             columns: 1;
         }
     }
+    
     .footer {
         background-color: #ffffff;
         color: #4b4c4d;
     }
+    
     #footer .ul {
         display: flex;
         top: 1900px;
@@ -306,6 +329,7 @@
         line-height: 1.6;
         margin-bottom: 0;
     }
+    
     #footer ul a {
         left: 165px;
         top: 1600px;
@@ -323,9 +347,11 @@
         opacity: 0.8;
         display: flex;
     }
+    
     #footer ul a:hover {
         opacity: 0.5;
     }
+    
     #footer .footer-line {
         /* Rectangle */
         position: absolute;
@@ -335,11 +361,13 @@
         left: 165px;
         background: rgba(0, 0, 0, 0.5);
     }
+    
     .footer-basic {
         padding: 40px 0;
         background-color: #ffffff;
         color: #4b4c4d;
     }
+    
     .footer-basic ul {
         display: flex;
         align-items: flex-start;
@@ -352,18 +380,22 @@
         margin-left: 150px;
         margin-top: 10px;
     }
+    
     .footer-basic li {
         padding: 0 10px;
     }
+    
     .footer-basic ul a {
         color: inherit;
         top: 1500px;
         text-decoration: none;
         opacity: 0.8;
     }
+    
     .footer-basic ul a:hover {
         opacity: 0.5;
     }
+    
     .footer-basic .social {
         align-self: center;
         align-content: center;
@@ -371,6 +403,7 @@
         text-align: center;
         padding-bottom: 25px;
     }
+    
     .footer-basic .social>a {
         display: flex;
         align-self: center;
@@ -385,9 +418,11 @@
         color: inherit;
         opacity: 0.75;
     }
+    
     .footer-basic .social>a:hover {
         opacity: 0.9;
     }
+    
     .foto2 {
         align-self: center;
         margin-top: 100px;
@@ -399,6 +434,7 @@
         align-content: center;
         text-align: center;
     }
+    
     .footer-basic .copyright {
         align-self: center;
         margin-top: 40px;
@@ -409,19 +445,23 @@
         margin-bottom: 0;
         font-family: DM Sans;
     }
+    
     .column {
         float: left;
         padding: 5px;
         margin-left: 15px;
     }
+    
     .row {
         margin: 0 -5px;
     }
+    
     .row:after {
         content: "";
         display: table;
         clear: both;
     }
+    
     .card {
         padding: 35px;
         background-color: #ffff;
@@ -434,6 +474,7 @@
         letter-spacing: -0.015em;
         color: #000000;
     }
+    
     @media screen and (max-width: 600px) {
         .column {
             width: 90%;
@@ -441,19 +482,23 @@
             margin-bottom: 20px;
         }
     }
+    
     .center {
         display: inline;
         margin: 3px;
     }
+    
     .form-input {
         width: 150px;
         padding: 3px;
         background: #fff;
         border: 2px dashed #fff;
     }
+    
     .form-input input {
         display: none;
     }
+    
     .form-input label {
         display: block;
         width: 200px;
@@ -463,12 +508,14 @@
         border-radius: 10px;
         cursor: pointer;
     }
+    
     .form-input img {
         width: 200px;
         height: 200px;
         margin: 2px;
         opacity: .0.2;
     }
+    
     .imgRemove {
         position: relative;
         bottom: 200px;
@@ -478,6 +525,7 @@
         font-size: 30px;
         outline: none;
     }
+    
     .imgRemove::after {
         content: ' \21BA';
         color: #fff;
@@ -485,6 +533,7 @@
         border-radius: 8px;
         cursor: pointer;
     }
+    
     .small {
         color: firebrick;
     }
